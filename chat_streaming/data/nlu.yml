@@ -1,0 +1,34 @@
+version: "3.1"
+
+nlu:
+
+- intent: cumprimentar
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+
+- intent: informar_problema
+  examples: |
+    - não consigo acessar minha [conta](problema)
+    - esqueci minha [senha](problema)
+    - não consigo fazer [login](problema)
+    - quero mudar meu [plano](problema)
+    - quero alterar minha [assinatura](problema)
+    - o [aplicativo](problema) não funciona
+    - o [app](problema) travou
+    - não consigo ouvir [música](problema)
+
+- intent: agradecer
+  examples: |
+    - obrigado
+    - valeu
+    - agradeço
+
+- intent: despedir
+  examples: |
+    - tchau
+    - até mais
+    - até logo

@@ -1,0 +1,31 @@
+version: "3.1"
+
+intents:
+  - cumprimentar
+  - informar_problema
+  - agradecer
+  - despedir
+
+entities:
+  - problema
+
+slots:
+  problema:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: problema
+
+responses:
+
+  utter_cumprimentar:
+    - text: "Olá! Como posso ajudar você hoje?"
+
+  utter_agradecer:
+    - text: "De nada! Fico feliz em ajudar."
+
+  utter_despedir:
+    - text: "Até mais! Se precisar, é só chamar."
+
+actions:
+  - action_fornecer_suporte
